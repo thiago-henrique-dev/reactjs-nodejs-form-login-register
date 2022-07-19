@@ -1,0 +1,33 @@
+# TESTE VAGA DE FRONT-END STARTPLUS
+
+* Primeiro renomeie o arquivo .env.example para .env
+
+* Abra seu workbanch e crie uma conexão nova e um novo banco de dados; 
+
+* Agora no .env altere os seguintes campos de acordo com a conexão que vc criou(o user, host e port abaixo estão padrões então vc pode manter se n mudou na hora de criar)
+
+    DB_NAME=nomeDoSeuBanco
+    DB_USER=root
+    DB_PASSWORD=test123
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+
+
+## COMO EXECUTAR
+
+### Clone o repositorio
+``` 
+git clone https://github.com/StartPlusFinance/test-front-end
+```
+### Instale as dependências 
+```
+npm install
+```
+### Rode as migrações
+```
+npx sequelize db:migrate
+```
+### execute a aplicação
+```
+npm run dev ou yarn dev
+```
