@@ -25,7 +25,7 @@ export const Login = () => {
                 .then(resp => { 
                     localStorage.getItem("token")
                     console.log(resp.data)
-                   // redirect('/account/check-first-access')
+                   redirect('/account/check-first-access')
                     
                 })
                 .catch(err => { console.log(err)
@@ -47,6 +47,7 @@ export const Login = () => {
             console.log(resp.data)
             localStorage.setItem('token', resp.data.token)
             acessFirst()
+            redirect('/account/personal-information')
             
          }).catch((e) => {
              console.log(e, "aaa")
